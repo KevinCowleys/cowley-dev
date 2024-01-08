@@ -1,0 +1,22 @@
+:root {
+    --darkPrimary: #111111;
+    --darkSecondary: #1a1a1a;
+    --textColour: #e0e0e0;
+    --textColourSecondary: #888;
+}
+
+body {
+    background-color: var(--darkPrimary);
+    line-height: 1.5;
+    font-family: proxima-nova, sans-serif;
+}
+
+.card {
+    background-color: var(--darkSecondary);
+}
+
+h1,
+h2 {
+    font-size: 20px;
+    font-weight: 700;
+}

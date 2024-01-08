@@ -1,0 +1,31 @@
+---
+import Card from "../components/Card.astro";
+---
+
+<Card colSpan="md:col-span-1" rowSpan="md:row-span-3">
+    <div class="h-full">
+        <header class="flex items-center">
+            <h1 class="text-white text-xl font-bold">
+                Let's chat!
+            </h1>
+        </header>
+        <address class="flex flex-col mt-4">
+            <h2 class="text-gray-500 not-italic">Contact Details</h2>
+            <p>
+                <a href="mailto:hello@cowley.dev" class="hover:text-cyan-900">hello@cowley.dev</a>
+            </p>
+            <p>Cape Town, South Africa</p>
+        </address>
+        <div class="flex flex-col mt-4 w-fit">
+            <h2 class="text-gray-500">Socials</h2>
+            <ul>
+                <li>
+                    <a href="https://www.linkedin.com/in/kevincowleys/" target="_blank" class="hover:text-cyan-900">LinkedIn</a>
+                </li>
+                <li>
+                    <a href="https://github.com/KevinCowleys" target="_blank" class="hover:text-cyan-900">Github</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</Card>

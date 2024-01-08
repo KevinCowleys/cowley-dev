@@ -1,0 +1,20 @@
+---
+import Card from "./Card.astro"
+import Button from "./IconButton.astro"
+---
+
+<Card colSpan="md:col-span-3" rowSpan="md:row-span-4" flexContent="flex"> 
+    <div class="flex flex-col justify-between md:max-h-[300px] gap-4 mr-auto">
+        <div class="flex flex-col h-full">
+            <h6 class="text-sm font-light m-0 text-gray-500">Welcome</h6>
+            <p class="m-0 font-light text-xl">
+                Hi, I'm <b class="font-bold">Kevin Cowley</b>, a self-taught developer skilled in both back-end and front-end technologies. This website showcases a glimpse of my professional career and personal interests. For a deeper insight into my work or myself, feel free to contact me.
+            </p>
+        </div>
+        <div class="flex gap-4">
+            <Button href="https://github.com/KevinCowleys" title="Github" isProfile={true}></Button>
+            <Button href="https://www.linkedin.com/in/kevincowleys/" title="LinkedIn" isProfile={true}></Button>
+        </div>
+    </div>
+    <img src="" alt="" class="w-auto max-h-[300px] select-none absolute right-[-110px] bottom-[-20px] z-[-1] opacity-50 md:opacity-100 md:relative md:right-auto md:bottom-auto md:z-auto pointer-events-none">
+</Card>

@@ -1,0 +1,14 @@
+---
+import Card from "./Card.astro";
+
+const { href, title, body } = Astro.props;
+---
+
+<Card colSpan="md:col-span-1" rowSpan="md:row-span-2" addPadding={false}>
+    <a href={href} aria-label={title} target="_blank" class="cursor-pointer flex flex-col h-full p-6">
+        <slot>
+            {title && <h2 class="text-xl font-bold m-0 z-20">{title}</h2>}
+            {body && <p class="m-0 text-sm font-light m-auto">{body}</p>}
+        </slot>
+    </a>
+</Card>

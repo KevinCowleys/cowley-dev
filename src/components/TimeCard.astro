@@ -1,0 +1,44 @@
+---
+import Card from "../components/Card.astro";
+---
+
+<Card colSpan="lg:col-span-2" rowSpan="md:row-span-2">
+    <h2 class="text-xl font-bold m-0 z-20">Time Zone</h2>
+    <time datetime="" id="timeZone" class="text-2xl xl:text-5xl xl:whitespace-nowrap w-50 xl:w-100 h-[calc(100%-28px)] flex justify-center items-center"></time>
+
+    <script is:inline>
+        // Run first time now
+        updateTime();
+        // Setup for every second
+        setInterval(updateTime, 1000);
+    
+        function updateTime() {
+            const timeDisplay = document.getElementById("timeZone");
+            const now = new Date();
+    
+            if (timeDisplay) {
+                const date = new Date();
+    
+                // Convert UTC time to South African Standard Time
+                const offsetItaly = 2;
+                date.setHours(now.getUTCHours() + offsetItaly);
+    
+                const options = {
+                    hour: "2-digit",
+                    minute: "2-digit",
+                    second: "2-digit",
+                    hour12: true,
+                    timeZone: "Africa/Johannesburg",
+                };
+    
+                let formattedTime = new Intl.DateTimeFormat("en-US", options).format(date);
+
+                // Adding timezone tag in
+                formattedTime += " SAST";
+    
+                timeDisplay.textContent = formattedTime;
+                timeDisplay.setAttribute("datetime", now.toISOString());
+            }
+        }
+    </script>
+</Card>

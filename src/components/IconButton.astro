@@ -1,0 +1,18 @@
+---
+import { Icon } from "astro-icon/components"
+
+interface Props {
+    href: string;
+    title: string;
+    isProfile: boolean;
+}
+
+const { href, title, isProfile } = Astro.props;
+---
+
+<a href={href} aria-label={title + (isProfile ? ' Profile' : '')} target="_blank">
+    <button class="text-xl max-h-[50px] shadow-[4px_2px_2px_var(--tw-shadow-color)] shadow-cyan-900 text-gray-200 px-5 py-2 border border-cyan-900 hover:text-cyan-900 cursor-pointer rounded-lg">
+        <Icon name={title} class="h-6" />
+        <span class="sr-only">{title} {isProfile ? ' Profile' : ''}</span>
+    </button>
+</a>

@@ -1,6 +1,7 @@
 ---
-import Card from "./Card.astro"
-import Button from "./IconButton.astro"
+import Card from "./Card.astro";
+import Button from "./IconButton.astro";
+import { config } from "../config.ts";
 ---
 
 <Card colSpan="md:col-span-3" rowSpan="md:row-span-4" flexContent="flex"> 
@@ -12,9 +13,9 @@ import Button from "./IconButton.astro"
             </p>
         </div>
         <div class="flex gap-4">
-            <Button href="https://github.com/KevinCowleys" title="Github" isProfile={true}></Button>
-            <Button href="https://www.linkedin.com/in/kevincowleys/" title="LinkedIn" isProfile={true}></Button>
+            <Button href={config.github.href} title={config.github.title} isProfile={true}></Button>
+            <Button href={config.linkedin.href} title={config.linkedin.title} isProfile={true}></Button>
         </div>
     </div>
-    <img src="" alt="" class="w-auto max-h-[300px] select-none absolute right-[-110px] bottom-[-20px] z-[-1] opacity-50 md:opacity-100 md:relative md:right-auto md:bottom-auto md:z-auto pointer-events-none">
+    <img width="300" height="300"src="/me.png" alt="Generated photo of Kevin Cowley" class="w-auto max-h-[300px] select-none absolute right-[-110px] bottom-[-20px] z-[-1] opacity-50 md:opacity-100 md:relative md:right-auto md:bottom-auto md:z-auto pointer-events-none">
 </Card>

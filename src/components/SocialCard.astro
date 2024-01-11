@@ -1,5 +1,6 @@
 ---
 import Card from "../components/Card.astro";
+import { config } from "../config.ts";
 ---
 
 <Card colSpan="md:col-span-1" rowSpan="md:row-span-3">
@@ -20,10 +21,10 @@ import Card from "../components/Card.astro";
             <h2 class="text-gray-500">Socials</h2>
             <ul>
                 <li>
-                    <a href="https://www.linkedin.com/in/kevincowleys/" target="_blank" class="hover:text-cyan-900">LinkedIn</a>
+                    <a href={config.linkedin.href} target="_blank" class="hover:text-cyan-900">LinkedIn</a>
                 </li>
                 <li>
-                    <a href="https://github.com/KevinCowleys" target="_blank" class="hover:text-cyan-900">Github</a>
+                    <a href={config.github.href} target="_blank" class="hover:text-cyan-900">GitHub</a>
                 </li>
             </ul>
         </div>

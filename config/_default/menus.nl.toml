@@ -1,0 +1,18 @@
+[[main]]
+    name = 'Startpagina'
+    url = '/'
+    weight = 10
+    [main.params]
+        enabled = true
+[[main]]
+    name = 'Over mij'
+    url = '/over-mij/'
+    weight = 20
+    [main.params]
+        enabled = false
+[[main]]
+    name = 'Projecten'
+    url = '/projecten/'
+    weight = 30
+    [main.params]
+        enabled = true

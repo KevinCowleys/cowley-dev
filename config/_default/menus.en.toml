@@ -1,0 +1,18 @@
+[[main]]
+    name = 'Home'
+    pageRef = '/'
+    weight = 10
+    [main.params]
+        enabled = true
+[[main]]
+    name = 'About'
+    pageRef = '/about/'
+    weight = 20
+    [main.params]
+        enabled = false
+[[main]]
+    name = 'Projects'
+    pageRef = '/projects/'
+    weight = 30
+    [main.params]
+        enabled = true

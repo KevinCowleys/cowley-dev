@@ -1,0 +1,59 @@
+baseURL = 'https://www.cowley.dev/'
+languageCode = 'en-us'
+title = 'Kevin Cowley - PHP, Laravel, Lumen'
+defaultContentLanguage = 'en'
+contentDir = 'content/'
+disableKinds = ['taxonomy', 'term']
+
+[params]
+    env = 'production'
+    author = 'Kevin Cowley'
+    description = 'Self-taught Senior Developer, that excels in PHP, Laravel and Lumen'
+    shareImage = '/images/me.webp'
+    [params.assets]
+        favicon16x16 = '/favicon-16x16.png'
+        favicon32x32 = '/favicon-32x32.png'
+        apple_touch_icon = '/apple-touch-icon.png'
+        faviconChrome192x192 = '/android-chrome-192x192.png'
+        faviconChrome512x512 = '/android-chrome-512x512.png'
+
+[sitemap]
+  changeFreq = ''
+  disable = false
+  filename = 'sitemap.xml'
+  priority = -1
+
+[languages]
+    [languages.en]
+        contentDir = 'content/en'
+        disabled = false
+        languageCode = 'en-US'
+        languageDirection = 'ltr'
+        languageName = 'English'
+        title = 'Kevin Cowley - PHP, Laravel, Lumen'
+        weight = 1
+        [languages.en.params]
+            languageName = 'English'
+            languageNameShort = 'en'
+      [languages.de]
+        contentDir = 'content/de'
+        disabled = false
+        languageCode = 'de-DE'
+        languageDirection = 'ltr'
+        languageName = 'Deutsch'
+        title = 'Kevin Cowley - PHP, Laravel, Lumen'
+        weight = 2
+        [languages.de.params]
+            languageName = 'Deutsch'
+            languageNameShort = 'de'
+      [languages.nl]
+        contentDir = 'content/nl'
+        disabled = false
+        languageCode = 'nl-NL'
+        languageDirection = 'ltr'
+        languageName = 'Nederlands'
+        title = 'Kevin Cowley - PHP, Laravel, Lumen'
+        weight = 3
+        [languages.nl.params]
+            languageName = 'Nederlands'
+            languageNameShort = 'nl'

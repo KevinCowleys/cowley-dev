@@ -1,0 +1,379 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/fonts/Montserrat-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/fonts/Montserrat-Bold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+:root {
+    font-family: 'Montserrat', Inter, Avenir, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+  
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: var(--background);
+  
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+    --accent: rgb(22 78 99);
+    --background: #111;
+    --secondary: #717171;
+}
+
+body {
+    margin: 0;
+    min-width: 320px;
+    min-height: 100vh;
+}
+
+a {
+    font-weight: 500;
+    /* color: #646cff; */
+    color: rgba(255, 255, 255, 0.87);
+    text-decoration: inherit;
+}
+a:hover {
+    /* color: #535bf2; */
+    color: white;
+    filter: drop-shadow(0 0 1em #646cffaa);
+}
+
+#app {
+    /* text-align: center; */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    align-items: stretch;
+    align-content: stretch;
+    max-width: 50rem;
+    margin: auto;
+}
+
+main {
+    padding-bottom: 5rem;
+}
+
+blockquote, dd, dl, figure, h1, h2, h3, h4, h5, h6, hr, p, pre {
+    margin: 0;
+}
+
+.block {
+    display: block;
+}
+
+.bg-secondary {
+    background-color: var(--accent);
+}
+
+.text-sm {
+    font-size: .9rem;
+    line-height: 1rem;
+}
+
+.muted-text {
+    color: gray;
+}
+
+.m-6 {
+    margin: 1.5rem 0;
+}
+.m-auto {
+    margin: auto;
+}
+.ml-2 {
+    margin-left: 0.5rem;
+}
+.ml-4 {
+    margin-left: 1rem;
+}
+.ml-5 {
+    margin-left: 1.125rem;
+}
+.ml-auto {
+    margin-left: auto;
+}
+.mr-2 {
+    margin-right: 0.5rem;
+}
+.mt-1 {
+    margin-top: .25rem;
+}
+.mt-4 {
+    margin-top: 1rem;
+}
+.mt-auto {
+    margin-top: auto;
+}
+.mt-6 {
+    margin-top: 1.5rem;
+}
+.mt-16 {
+    margin-top: 4rem;
+}
+.mb-6 {
+    margin-bottom: 1.5rem;
+}
+.mb-12 {
+    margin-bottom: 3rem;
+}
+.mx-2 {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+.mx-4 {
+    margin: 1rem 0;
+}
+
+
+h2 {
+    margin-bottom: 1rem;
+}
+
+.list-disc {
+    list-style-type: disc;
+}
+
+.prose {
+    color: #d1d5db;;
+    max-width: 65ch;
+}
+
+.p-4 {
+    padding: 1rem;
+}
+.pr-2 {
+    padding-right: 0.5rem;
+}
+.pr-8 {
+    padding-right: 2rem;
+}
+.px-4 {
+    padding: 0 1rem;
+}
+.px-1 {
+    padding-left: .25rem;
+    padding-right: .25rem;
+}
+.px-2 {
+    padding: 0 0.5rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+.font-semibold {
+    font-weight: 600;
+}
+
+.text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+.text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+}
+
+.flex {
+    display: flex;
+}
+
+.gap-3 {
+    gap: 0.75rem;
+}
+.gap-4 {
+    gap: 1rem;
+}
+.gap-6 {
+    gap: 1.5rem;
+}
+.gap-8 {
+    gap: 2rem;
+}
+.gap-12 {
+    gap: 3rem;
+}
+.grid {
+    display: grid;
+}
+.grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.rounded-md {
+    border-radius: .375rem;
+}
+.rounded-lg {
+    border-radius: .5rem;
+}
+.rounded-xl {
+    border-radius: .75rem;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.currecnt-technologies img {
+    transition: filter .2s ease;
+    filter: grayscale(1) invert(1);
+}
+
+.currecnt-technologies > div:hover img {
+    filter: grayscale(0) invert(0);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.h-40 {
+    height: 10rem;
+}
+.h-88 {
+    height: 22rem;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.object-cover {
+    object-fit: cover;
+}
+
+.object-top {
+    object-position: top;
+}
+
+.border {
+    border-width: 1px;
+    border-style: solid;
+}
+
+.button-resume {
+    align-items: center;
+    background-color: transparent;
+    border: 1px solid var(--accent);
+    border-radius: 0.5rem;
+    cursor: pointer;
+    display: inline-flex;
+    height: 2.25rem;
+    padding: .5rem 1rem;
+    white-space: nowrap;
+    justify-content: center;
+    transition-property: color,background-color,border-color,text-decoration-color,fill,stroke;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    transition-duration: .15s;
+}
+
+.button-resume:hover {
+    background-color: var(--accent); 
+}
+
+.projects-featured > a {
+    background-color: var(--background);
+}
+
+.workExperience > ul {
+    border: 0 solid #e5e7eb;
+    border-left-width: 1px;
+    border-color: var(--accent);;
+}
+.workExperience > ul > li > a {
+    align-items: center;
+    border-radius: 9999px;
+    display: flex;
+    justify-content: center;
+    top: 1rem;
+    left: -4rem;
+    position: absolute;
+    margin-top: 0.6rem;
+}
+.workExperience > ul a > span {
+    border-width: 1px;
+    border-radius: 9999px;
+    display: flex;
+    overflow: hidden;
+    flex-shrink: 0;
+    width: 3rem;
+    height: 3rem;
+    position: relative;
+}
+.workExperience > ul > li {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-left: 2.5rem;
+    position: relative;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.h-\[175px\] {
+    height: 175px;
+}
+
+.project-small-desc {
+    height: calc(50% - 2rem);
+}
+
+@media only screen and (max-width: 900px) {
+    body {
+        padding: 0 10px;
+    }
+}
+
+@media (width >= 40rem) {
+    .sm\:flex-row {
+        flex-direction: row;
+    }
+    .sm\:gap-0 {
+        gap: 0;
+    }
+    .sm\:grid-cols-2 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .sm\:m-0 {
+        margin: 0;
+    }
+    .sm\:mt-auto {
+        margin-top: auto;
+    }
+    .sm\:ml-10 {
+        margin-left: 2.5rem;
+    }
+    .sm\:text-start {
+        text-align: start;
+    }
+    .project-small-desc {
+        height: calc(50% - 1rem);
+    }
+}

@@ -1,0 +1,21 @@
+        <a href="{{ .Get "href" }}" class="rounded-xl border p-4" style="border-color: var(--accent);">
+          {{- $dataKey := .Get "datakey" }}
+          {{- $projectData := index site.Data.projects $dataKey }}
+          {{- if $projectData }}
+          <picture class="block h-40 w-full">
+            <source srcset="{{ $projectData.imgUrlSmall }}.webp" type="image/webp">
+            <img src="{{ $projectData.imgUrlSmall }}.png" alt="{{ .Get "title" }} {{ T "image" }}" class="h-40 w-full object-cover object-top rounded-xl">
+          </picture>
+          {{- end }}
+          <div class="project-small-desc flex flex-col">
+            <h4 class="font-semibold mt-1">{{ .Get "title" }}</h4>
+            <p class="mx-4">{{ .Get "description" }}</p>
+            <div class="mt-auto">
+              {{- $software := .Get "software" }}
+              {{- $softwareList := split $software "," }}
+              {{- range $key, $value := $softwareList }}
+              <span class="px-1 text-sm rounded-md bg-secondary">{{ $value }}</span>
+              {{- end }}
+            </div>
+          </div>
+        </a>

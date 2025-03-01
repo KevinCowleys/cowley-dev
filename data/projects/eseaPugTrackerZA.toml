@@ -1,0 +1,26 @@
+websiteUrl = 'https://esea-pugs-za.vercel.app/'
+websiteSrcUrl = ''
+programSrcUrl = 'https://github.com/KevinCowleys/ESEA-Checker-Script'
+imgUrl = '/images/esea-pug-tracker-za'
+imgUrlSmall = '/images/esea-pug-tracker-za_small'
+[[websiteTechnology]]
+	svg = ''
+	title = 'Angular'
+[[websiteTechnology]]
+	svg = ''
+	title = 'HTML'
+[[websiteTechnology]]
+	svg = ''
+	title = 'SCSS'
+[[websiteTechnology]]
+	svg = ''
+	title = 'TypeScript'
+[[websiteTechnology]]
+	svg = ''
+	title = 'MongoDB'
+[[programTechnology]]
+	svg = ''
+	title = 'Python'
+[[programTechnology]]
+	svg = ''
+	title = 'MongoDB'

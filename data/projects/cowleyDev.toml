@@ -1,0 +1,17 @@
+websiteUrl = 'https://www.cowley.dev/'
+websiteSrcUrl = 'https://github.com/KevinCowleys/cowley-dev/'
+programSrcUrl = ''
+imgUrl = '/images/cowley-dev'
+imgUrlSmall = '/images/cowley-dev_small'
+[[websiteTechnology]]
+	svg = ''
+	title = 'Hugo'
+[[websiteTechnology]]
+	svg = ''
+	title = 'HTML5'
+[[websiteTechnology]]
+	svg = ''
+	title = 'JavaScript'
+[[websiteTechnology]]
+	svg = ''
+	title = 'CSS'

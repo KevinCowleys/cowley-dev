@@ -1,0 +1,69 @@
+      <div class="workExperience mt-16">
+        <h2 class="text-xl font-semibold">{{ T "experience" }}</h2>
+        <ul class="ml-5 sm:ml-10">
+          <li>
+            <a href="https://www.linkedin.com/company/payfast/" target="_blank" rel="noopener noreferrer" title="Payfast by Network International LinkedIn">
+              <span><picture><source srcset="/images/payfast_logo.webp" type="image/webp"><img src="/images/payfast_logo.jpg" alt="Payfast by Network International logo" fetchpriority="high" width="48" height="48"></picture></span>
+            </a>
+            <div>
+              <time datetime="" class="text-sm muted-text">{{ T "september" }} 2023 - {{ T "present" }}</time>
+              <h4 class="font-semibold">Payfast by Network International</h4>
+              <p class="text-sm muted-text">{{ T "senior_developer" }}</p>
+              <ul class="mt-4 ml-4 list-disc">
+                <li class="prose pr-8 text-s">{{ T "senior_developer_desc_1" }}</li>
+                <li class="prose pr-8 text-s">{{ T "senior_developer_desc_2" }}</li>
+                <li class="prose pr-8 text-s">
+                  {{- $seniorDevDescThree := T "senior_developer_desc_3" }}
+                  {{- range (seq 111) }}
+                    {{- $matches := findRESubmatch `\[(?P<link_text>[^\[\]]*)\]\((?P<link_href>.*?)\)` $seniorDevDescThree 1 }}
+                    {{- range $matches }}
+                      {{- $link_text := index . 1 }}
+                      {{- $link_href := index . 2 }}
+                      {{- $generated_link := `<a href="replace_me_link" target="_blank" rel="noopener noreferrer" class="font-semibold">replace_me_text</a>` }}
+                      {{- $generated_link = replace $generated_link "replace_me_text" $link_text }}
+                      {{- $generated_link = replace $generated_link "replace_me_link" $link_href }}
+                      {{- $seniorDevDescThree = replaceRE `(?:__|[*#])|\[(.*?)\]\(.*?\)` $generated_link $seniorDevDescThree 1 }}
+                    {{- end }}
+                  {{- end }}
+                  {{- $seniorDevDescThree | safeHTML -}}
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/company/payfast/" target="_blank" rel="noopener noreferrer" title="Payfast by Network International LinkedIn">
+              <span><picture><source srcset="/images/payfast_logo.webp" type="image/webp"><img src="/images/payfast_logo.jpg" alt="Payfast by Network International logo" fetchpriority="high" width="48" height="48"></picture></span>
+            </a>
+            <div>
+              <time datetime="" class="text-sm muted-text">{{ T "february" }} 2023 - {{ T "august" }} 2023</time>
+              <h4 class="font-semibold">Payfast by Network International</h4>
+              <p class="text-sm muted-text">{{ T "intermediate_developer" }}</p>
+            </div>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/company/payfast/" target="_blank" rel="noopener noreferrer" title="Payfast by Network International LinkedIn">
+              <span><picture><source srcset="/images/payfast_logo.webp" type="image/webp"><img src="/images/payfast_logo.jpg" alt="Payfast by Network International logo" fetchpriority="high" width="48" height="48"></picture></span>
+            </a>
+            <div>
+              <time datetime="" class="text-sm muted-text">{{ T "march" }} 2022 - {{ T "january" }} 2023</time>
+              <h4 class="font-semibold">Payfast by Network International</h4>
+              <p class="text-sm muted-text">{{ T "junior_developer" }}</p>
+            </div>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/company/5609162/" target="_blank" rel="noopener noreferrer" title="Social Web Tech LinkedIn">
+              <span><picture><source srcset="/images/social_web_tech_logo.webp" type="image/webp"><img src="/images/social_web_tech_logo.jpg" alt="Social Web Tech logo" fetchpriority="high" width="48" height="48"></picture></span>
+            </a>
+            <div>
+              <time datetime="" class="text-sm muted-text">{{ T "august" }} 2019 - {{ T "july" }} 2021</time>
+              <h4 class="font-semibold">Social Web Tech</h4>
+              <p class="text-sm muted-text">{{ T "software_engineer" }}</p>
+              <ul class="mt-4 ml-4 list-disc">
+                <li class="prose pr-8 text-s">{{ T "software_engineer_desc_1" }}</li>
+                <li class="prose pr-8 text-s">{{ T "software_engineer_desc_2" }}</li>
+                <li class="prose pr-8 text-s">{{ T "software_engineer_desc_3" }}</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>

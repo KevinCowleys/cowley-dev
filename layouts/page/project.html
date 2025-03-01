@@ -1,0 +1,48 @@
+{{ define "main" }}
+    <h1 class="text-4xl font-semibold text-center mb-12">{{ .Params.title }}</h1>
+    {{- $dataKey := .Params.dataKey }}
+    {{- $projectData := index site.Data.projects $dataKey }}
+    <img src="{{ $projectData.imgUrl }}.png" alt="" class="h-88 w-full object-cover object-top rounded-xl">
+    <div class="mt-6">
+      {{- if not (eq $projectData.websiteUrl "") }}
+      <a href="{{ $projectData.websiteUrl }}" target="_blank">
+        <button class="button-resume">
+          <img src="" alt="">
+          <span class="font-semibold">{{ T "website" }}</span>
+        </button>
+      </a>
+      {{- end }}
+      {{- if not (eq $projectData.websiteSrcUrl "") }}
+      <a href="{{ $projectData.websiteSrcUrl }}" target="_blank">
+        <button class="button-resume">
+          <img src="" alt="">
+          <span class="font-semibold">{{ T "websiteSource" }}</span>
+        </button>
+      </a>
+      {{- end }}
+      {{- if not (eq $projectData.programSrcUrl "") }}
+      <a href="{{ $projectData.programSrcUrl }}" target="_blank">
+        <button class="button-resume">
+          <img src="" alt="">
+          <span class="font-semibold">{{ T "programSource" }}</span>
+        </button>
+      </a>
+      {{- end }}
+    </div>
+    {{- if $projectData.websiteTechnology }}
+    <h2 class="text-xl font-semibold mb-6 mt-6">{{ T "websiteTechnology" }}</h2>
+    <div class="flex gap-12 flex-wrap justify-center text-center currecnt-technologies">
+      {{- range $technology := $projectData.websiteTechnology }}
+      <div>{{ partialCached "icon.html" (dict "svgName" $technology.title "svgTitle" $technology.title) $technology.title }}</div>
+      {{- end }}
+    </div>
+    {{- end }}
+    {{- if $projectData.programTechnology }}
+    <h2 class="text-xl font-semibold mb-6 mt-6">{{ T "programTechnology" }}</h2>
+    <div class="flex gap-12 flex-wrap justify-center text-center currecnt-technologies">
+      {{- range $technology := $projectData.programTechnology }}
+      <div>{{ partialCached "icon.html" (dict "svgName" $technology.title "svgTitle" $technology.title) $technology.title }}</div>
+      {{- end }}
+    </div>
+    {{- end }}
+{{- end }}

@@ -1,0 +1,40 @@
+      <div class="mt-16">
+        <div class="flex">
+          <h2 class="text-xl font-semibold">{{ T "featured_projects" }}</h2>
+          <a href="{{ relref . "projects" }}" class="ml-auto">{{ T "view_more" }}</a>
+        </div>
+        <div class="projects-featured grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <a href="{{ relref . "cs-stats-viewer" }}" class="rounded-xl border p-4" style="border-color: var(--accent);">
+            <picture class="block h-40 w-full">
+              <source srcset="{{ site.Data.projects.csStatsViewer.imgUrlSmall }}.webp" type="image/webp">
+              <img src="{{ site.Data.projects.csStatsViewer.imgUrlSmall }}.png" alt="CSStatsViewer {{ T "image" }}" class="h-40 w-full object-cover object-top rounded-xl">
+            </picture>
+            <div>
+              <h4 class="font-semibold mt-1">CS Stats Viewer</h4>
+              <p class="mx-4">{{ T "cs_stats_viewr_desc" }}</p>
+              <div class="mt-auto">
+                <span class="px-1 text-sm rounded-md bg-secondary">Angular</span>
+                <span class="px-1 text-sm rounded-md bg-secondary">TypeScript</span>
+                <span class="px-1 text-sm rounded-md bg-secondary">HTML5</span>
+                <span class="px-1 text-sm rounded-md bg-secondary">TypeScript</span>
+              </div>
+            </div>
+          </a>
+          <a href="{{ relref . "csgo-stratbook" }}" class="rounded-xl border p-4" style="border-color: var(--accent);">
+            <picture class="block h-40 w-full">
+              <source srcset="{{ site.Data.projects.csgoStratbook.imgUrlSmall }}.webp" type="image/webp">
+              <img src="{{ site.Data.projects.csgoStratbook.imgUrlSmall }}.png" alt="CSGO Stratbook {{ T "image" }}" class="h-40 w-full object-cover object-top rounded-xl">
+            </picture>
+            <div class="project-small-desc flex flex-col">
+              <h4 class="font-semibold mt-1">CSGO Stratbook</h4>
+              <p class="mx-4">{{ T "csgo_stratbook_desc" }}</p>
+              <div class="mt-auto">
+                <span class="px-1 text-sm rounded-md bg-secondary">Qt</span>
+                <span class="px-1 text-sm rounded-md bg-secondary">C++</span>
+                <span class="px-1 text-sm rounded-md bg-secondary">QML</span>
+                <span class="px-1 text-sm rounded-md bg-secondary">JavaScript</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>

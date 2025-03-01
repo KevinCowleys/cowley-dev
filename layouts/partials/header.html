@@ -1,0 +1,24 @@
+{{- range $index, $value := site.Menus.main }}
+  {{- if .Params.Enabled }}
+      <a href="{{ .URL | absLangURL }}" class="{{ if (eq $index 0) }}mr-2{{ else }}mx-2{{ end }}" title="{{ .Name }}" rel="preload">
+        {{- .Name -}}
+      </a>
+      <link rel="prefetch" href="{{ .URL | safeURL }}" />
+  {{- end }}
+{{- end }}
+
+{{- $siteLanguages := site.Languages }}
+{{- $pageLang := .Page.Lang }}
+{{- range $index, $value := .Page.AllTranslations }}
+    {{- $translation := . }}
+    {{- range sort $siteLanguages "Weight" "asc" }}
+        {{- if eq $translation.Lang .Lang }}
+            {{- $lastLang := index (last 1 $siteLanguages) 0 }}
+            {{- if eq $pageLang .Lang}}
+      <a class="font-semibold {{ if (eq $index 0) }}ml-auto{{ else if (in .Params.languageNameShort $lastLang) }}{{ else }}mx-2{{ end }}" href="{{ $translation.Permalink | relURL }}" hreflang="{{ .Lang }}" title="{{ .LanguageName }}" lang="{{ .Lang }}">{{ .Params.languageNameShort }}</a>
+            {{- else }}
+      <a class="{{ if (eq $index 0) }}ml-auto{{ else if (in .Params.languageNameShort $lastLang) }}{{ else }}mx-2{{ end }}" href="{{ $translation.Permalink | relURL }}" hreflang="{{ .Lang }}" title="{{ .LanguageName }}" lang="{{ .Lang }}">{{ .Params.languageNameShort }}</a>
+            {{- end }}
+        {{- end }}
+    {{- end -}}
+{{- end -}}

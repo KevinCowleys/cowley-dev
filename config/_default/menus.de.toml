@@ -1,0 +1,18 @@
+[[main]]
+    name = 'Startseite'
+    url = '/'
+    weight = 10
+    [main.params]
+        enabled = true
+[[main]]
+    name = 'Über mich'
+    url = '/ueber-mich/'
+    weight = 20
+    [main.params]
+        enabled = false
+[[main]]
+    name = 'Projekte'
+    url = '/projekte/'
+    weight = 30
+    [main.params]
+        enabled = true

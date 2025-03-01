@@ -1,0 +1,25 @@
+      <script>
+        const pageLang = "{{ .Page.Lang }}";
+        const hourBehind = "{{ T "hour_behind" }}";
+        const hoursBehind = "{{ T "hours_behind" }}";
+        const hourAhead = "{{ T "hour_ahead" }}";
+        const hoursAhead = "{{ T "hours_ahead" }}";
+      </script>
+      {{- with resources.Get "css/map.css" | minify }}
+      <style>{{ .Content | safeCSS }}</style>
+      {{- end }}
+      <link href='https://unpkg.com/maplibre-gl@latest/dist/maplibre-gl.css' rel='stylesheet' />
+      <script src='https://unpkg.com/maplibre-gl@latest/dist/maplibre-gl.js'></script>
+      <div class="map-container">
+        <div class="map-container">
+          <div id='map'></div>
+          <div class="map-bottom-gradient"></div>
+          <img src="/images/cloud_small.webp" alt="cloud" draggable="false" class="cloud">
+        </div>
+        <div class="map-time">
+          <time datetime="" id="timeZone" data-tooltip=""></time>
+        </div>
+      </div>
+      {{- with resources.Get "js/map.js" | minify }}
+      <script>{{ .Content | safeJS }}</script>
+      {{- end }}

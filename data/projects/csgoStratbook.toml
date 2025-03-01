@@ -1,0 +1,29 @@
+websiteUrl = 'https://unqualified-csgo.com/'
+websiteSrcUrl = ''
+programSrcUrl = ''
+imgUrl = '/images/csgo-stratbook'
+imgUrlSmall = '/images/csgo-stratbook_small'
+[[websiteTechnology]]
+	svg = ''
+	title = 'Vue'
+[[websiteTechnology]]
+	svg = ''
+	title = 'HTML5'
+[[websiteTechnology]]
+	svg = ''
+	title = 'CSS3'
+[[websiteTechnology]]
+	svg = ''
+	title = 'JavaScript'
+[[programTechnology]]
+	svg = ''
+	title = 'Qt'
+[[programTechnology]]
+	svg = ''
+	title = 'C++'
+[[programTechnology]]
+	svg = ''
+	title = 'QML'
+[[programTechnology]]
+	svg = ''
+	title = 'JavaScript'

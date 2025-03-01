@@ -1,0 +1,6 @@
+{{- $size := .size | default 75 }}
+{{- $showTitle := .showTitle | default true -}}
+<img src="/images/svg/{{ .svgName }}.svg" alt="{{ .svgTitle }}" width="{{ $size }}" height="{{ $size }}">
+{{- if $showTitle -}}
+<div class="text-sm">{{ .svgTitle }}</div>
+{{- end -}}

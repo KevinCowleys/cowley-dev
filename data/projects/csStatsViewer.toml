@@ -1,0 +1,32 @@
+websiteUrl = 'https://www.csstatsviewer.com/'
+websiteSrcUrl = ''
+programSrcUrl = ''
+imgUrl = '/images/cs-stats-viewer'
+imgUrlSmall = '/images/cs-stats-viewer_small'
+[[websiteTechnology]]
+	svg = ''
+	title = 'Hugo'
+[[websiteTechnology]]
+	svg = ''
+	title = 'HTML5'
+[[websiteTechnology]]
+	svg = ''
+	title = 'CSS3'
+[[programTechnology]]
+	svg = ''
+	title = 'Angular'
+[[programTechnology]]
+	svg = ''
+	title = 'HTML5'
+[[programTechnology]]
+	svg = ''
+	title = 'CSS3'
+[[programTechnology]]
+	svg = ''
+	title = 'TypeScript'
+[[programTechnology]]
+	svg = ''
+	title = 'Jest'
+[[programTechnology]]
+	svg = ''
+	title = 'Playwright'

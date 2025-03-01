@@ -1,0 +1,101 @@
+.map-container {
+    border-top-left-radius: 0.75rem;
+    border-top-right-radius: 0.75rem;
+    position: relative;
+    height: 12rem;
+}
+.map-container .map-container {
+    overflow: hidden;
+}
+#map {
+    height: 100%;
+    width: 100%;
+}
+.map-bottom-gradient {
+    background-image: linear-gradient(transparent, #18181b73 60%, #0a0a0a);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 4rem;
+    position: absolute;
+    pointer-events: none;
+}
+.map-container:hover .cloud {
+    opacity: 0;
+    pointer-events: none;
+}
+.maplibregl-ctrl-bottom-left,
+.maplibregl-ctrl-bottom-right {
+    display: none;
+}
+@keyframes cloud {
+    0% {
+        transform: translate(300px, -80px);
+    }
+    to {
+        transform: translate(-50px, -80px);
+    }
+}
+.cloud {
+    animation: cloud 100s linear infinite;
+    position: absolute;
+    top: 0;
+    height: 20rem;
+    opacity: 10%;
+    filter: blur(4px);
+    transition-duration: 0.5s;
+    transition-property: opacity;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.map-time {
+    padding: 0.5rem;
+    top: 0;
+    right: 0;
+    position: absolute;
+}
+.map-time time {
+    background-color: hsl(0 0% 4%/0.8);
+    border-radius: 0.25rem;
+    cursor: pointer;
+    font-size: 0.875rem;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+    line-height: 1.25rem;
+    padding: 0.375rem 0.5rem;
+}
+.map-time time::before,
+.map-time time::after {
+    --scale: 0;
+    --arrow-size: 10px;
+    --tooltip-color: #333;
+
+    position: absolute;
+    bottom: -0.25rem;
+    left: 50%;
+    transform: translateX(-50%) translateY(var(--translate-y, 0)) scale(var(--scale));
+    transition: 150ms transform;
+    transform-origin: top center;
+}
+.map-time time::before {
+    --translate-y: 100%;
+    border-radius: 0.3rem;
+    background-color: var(--tooltip-color);
+    background-color: #1a1a1a;
+    content: attr(data-tooltip);
+    color: white;
+    padding: 0.5rem;
+    width: max-content;
+    text-align: center;
+}
+.map-time time::after {
+    --translate-y: calc(0 * var(--arrow-size));
+
+    content: "";
+    border: var(--arrow-size) solid transparent;
+    border-bottom-color: var(--tooltip-color);
+    border-bottom-color: #1a1a1a;
+    transform-origin: bottom center;
+}
+.map-time time:hover::before,
+.map-time time:hover::after {
+    --scale: 1;
+}

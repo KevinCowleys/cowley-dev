@@ -1,0 +1,56 @@
+resume = 'Lebenslauf'
+email = 'E-Mail'
+projects = 'Projekte'
+
+image = 'Foto'
+
+website = 'Webseite'
+source = 'Source'
+websiteSource = 'Webseite-Source'
+programSource = 'Programm-Source'
+websiteTechnology = 'Webseite Technologie'
+programTechnology = 'Programm Technologie'
+
+hour_behind = "Sind sind replace_me Stunde im Rückstand"
+hours_behind = "Sind sind replace_me Stunden im Rückstand"
+hour_ahead = "Sind sind replace_me Stunde voraus"
+hours_ahead = "Sind sind replace_me Stunden voraus"
+
+current_technologies = 'Aktuelle Technologien'
+current_technologies_desc = "Ich beherrsche verschiedene Technologien, die es mir ermöglichen, effektive Lösungen zu erstellen, wobei der Schwerpunkt auf der Backend-Entwicklung liegt. Hier sind einige der wichtigsten, die ich bei meiner Arbeit verwende."
+
+experience = 'Erfahrung'
+senior_developer = 'Senior PHP-Entwickler'
+intermediate_developer = 'Intermediate PHP-Entwickler'
+junior_developer = 'Junior PHP-Entwickler'
+software_engineer = 'Softwareentwickler'
+present = 'Gegenwärtig'
+
+senior_developer_desc_1 = 'Nachgewiesene Kernkompetenz in PHP unter Nutzung des Laravel- und Lumen-Frameworks.'
+senior_developer_desc_2 = 'Als Back-End-Entwickler spielte er eine Schlüsselrolle bei der Entwicklung verschiedener von Payfast angebotener Zahlungsmethoden, die täglich von Tausenden südafrikanischen Händlern und Millionen von Käufern genutzt werden.'
+senior_developer_desc_3 = 'Bearbeitete Zahlungsmethoden an: [Card Payments](https://payfast.io/features/payment-methods/credit-cheque-cards/), [Multi-Currency Payments](https://payfast.io/features/multi-currency-pricing/), [RCS](https://payfast.io/features/payment-methods/store-cards/), [Mobicred](https://payfast.io/features/payment-methods/mobicred/), [Shopify Integration](https://payfast.io/integration/plugins/shopify/), [Capitec Pay](https://payfast.io/features/payment-methods/capitec-pay/), [Network International Point-of-Sale](https://payfast.io/network/) Geräteintegration und fungierte als technischer Leiter und Entwickler für die Integrationen von [Apple Pay](https://payfast.io/features/payment-methods/apple-pay/) und [Samsung Pay](https://payfast.io/features/payment-methods/samsung-pay/).'
+
+software_engineer_desc_1 = 'Ich habe für Game-Debate gearbeitet und ihre Website aktualisiert, was eine 100%ige Überarbeitung des Legacy-Codebase von Fat-Free Framework auf das Laravel-Framework erforderte.'
+software_engineer_desc_2 = 'Ich habe verschiedene Browsererweiterungen erstellt, um Daten auf der Website hinzuzufügen.'
+software_engineer_desc_3 = 'Ich habe Desktop- und Mobile-Anwendungen mit C++ und QML in Qt entwickelt.'
+
+january = 'Januar'
+february = 'Februar'
+march = 'März'
+april = 'April'
+may = 'Mai'
+june = 'Juni'
+july = 'Juli'
+august = 'August'
+september = 'September'
+october = 'Oktober'
+november = 'November'
+december = 'Dezember'
+
+view_more = 'Mehr anzeigen'
+featured_projects = 'Ausgewählte Projekte'
+
+cs_stats_viewr_desc = 'Verbessern Sie Ihr Counter-Strike-Erlebnis mit meiner Chrome/Firefox-Erweiterung, die Steam-Statistiken für ESEA, FaceIt und mehr bietet.'
+csgo_stratbook_desc = 'Entwickelt, um lokalen und internationalen Teams dabei zu helfen, eine effektivere Kommunikation über Starts und Versorgungsnutzung zu ermöglichen.'
+
+testomonials = 'Erfahrungsberichte'

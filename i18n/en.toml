@@ -1,0 +1,56 @@
+resume = 'Resume'
+email = 'Email'
+projects = 'Projects'
+
+image = 'image'
+
+website = 'Website'
+source = 'Source'
+websiteSource = 'Website Source'
+programSource = 'Program Source'
+websiteTechnology = 'Website Technology'
+programTechnology = 'Program Technology'
+
+hour_behind = "You're replace_me hour behind"
+hours_behind = "You're replace_me hours behind"
+hour_ahead = "You're replace_me hour ahead"
+hours_ahead = "You're replace_me hours ahead"
+
+current_technologies = 'Current Technologies'
+current_technologies_desc = "I'm skilled in various technologies that allow me to create effective solutions, with a main focus on back-end development. Here are some of the main ones I use at my job."
+
+experience = 'Experience'
+senior_developer = 'Senior Developer'
+intermediate_developer = 'Intermediate PHP Developer'
+junior_developer = 'Junior PHP Developer'
+software_engineer = 'Software Engineer'
+present = 'Present'
+
+senior_developer_desc_1 = 'Demonstrated core expertise in PHP, leveraging the Laravel and Lumen framework.'
+senior_developer_desc_2 = 'As a back-end developer, played a key role in developing various payment methods offered by Payfast that are used daily by thousands of South African merchants and millions of buyers.'
+senior_developer_desc_3 = 'Payment Methods worked on: [Card Payments](https://payfast.io/features/payment-methods/credit-cheque-cards/), [Multi-Currency Payments](https://payfast.io/features/multi-currency-pricing/), [RCS](https://payfast.io/features/payment-methods/store-cards/), [Mobicred](https://payfast.io/features/payment-methods/mobicred/), [Shopify Integration](https://payfast.io/integration/plugins/shopify/), [Capitec Pay](https://payfast.io/features/payment-methods/capitec-pay/), [Network International Point-of-Sale](https://payfast.io/network/) device integration, and served as Tech Lead and developer for [Apple Pay](https://payfast.io/features/payment-methods/apple-pay/) and [Samsung Pay](https://payfast.io/features/payment-methods/samsung-pay/) integrations.'
+
+software_engineer_desc_1 = 'Worked on Game-Debate, which required a 100% revamp from the legacy codebase using Fat-Free Framework to the Laravel framework.'
+software_engineer_desc_2 = 'Created various browser extensions to help with adding data to the website.'
+software_engineer_desc_3 = 'Developed desktop and mobile applications written in Qt with C++ and QML.'
+
+january = 'January'
+february = 'February'
+march = 'March'
+april = 'April'
+may = 'May'
+june = 'June'
+july = 'July'
+august = 'August'
+september = 'September'
+october = 'October'
+november = 'November'
+december = 'December'
+
+view_more = 'View More'
+featured_projects = 'Featured Projects'
+
+cs_stats_viewr_desc = 'Enchance your Counter-Strike experience with my Chrome/Firefox extension, offering Steam stats for ESEA, FaceIt and more.'
+csgo_stratbook_desc = 'Created to help local and international teams share more effective communication of starts and utility usage.'
+
+testomonials = 'Testimonials'

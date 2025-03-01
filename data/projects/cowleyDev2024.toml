@@ -1,0 +1,17 @@
+websiteUrl = 'https://2024.cowley.dev/'
+websiteSrcUrl = 'https://github.com/KevinCowleys/cowley-dev/'
+programSrcUrl = ''
+imgUrl = '/images/cowley-dev-2024'
+imgUrlSmall = '/images/cowley-dev-2024_small'
+[[websiteTechnology]]
+	svg = ''
+	title = 'Astro'
+[[websiteTechnology]]
+	svg = ''
+	title = 'HTML5'
+[[websiteTechnology]]
+	svg = ''
+	title = 'TailwindCSS'
+[[websiteTechnology]]
+	svg = ''
+	title = 'JavaScript'

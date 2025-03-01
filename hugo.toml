@@ -4,6 +4,7 @@ title = 'Kevin Cowley - PHP, Laravel, Lumen'
 defaultContentLanguage = 'en'
 contentDir = 'content/'
 disableKinds = ['taxonomy', 'term']
+enableRobotsTXT = true
 
 [params]
     env = 'production'

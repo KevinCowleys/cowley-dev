@@ -1,10 +1,10 @@
       <div class="mt-16">
         <div class="flex">
           <h2 class="text-xl font-semibold">{{ T "featured_projects" }}</h2>
-          <a href="{{ relref . (dict "path" "projects" "language" site.Language.LanguageCode) }}" class="ml-auto">{{ T "view_more" }}</a>
+          <a href="{{ relref . (dict "path" "projects" "lang" .Page.Lang) }}" class="ml-auto">{{ T "view_more" }}</a>
         </div>
         <div class="projects-featured grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <a href="{{ relref . (dict "path" "cs-stats-viewer" "language" site.Language.LanguageCode) }}" class="rounded-xl border p-4" style="border-color: var(--accent);">
+          <a href="{{ relref . (dict "path" "cs-stats-viewer" "lang" .Page.Lang) }}" class="rounded-xl border p-4" style="border-color: var(--accent);">
             <picture class="block h-40 w-full">
               <source srcset="{{ site.Data.projects.csStatsViewer.imgUrlSmall }}.webp" type="image/webp">
               <img src="{{ site.Data.projects.csStatsViewer.imgUrlSmall }}.png" alt="CSStatsViewer {{ T "image" }}" class="h-40 w-full object-cover object-top rounded-xl">
@@ -20,7 +20,7 @@
               </div>
             </div>
           </a>
-          <a href="{{ relref . (dict "path" "csgo-stratbook" "language" site.Language.LanguageCode) }}" class="rounded-xl border p-4" style="border-color: var(--accent);">
+          <a href="{{ relref . (dict "path" "csgo-stratbook" "lang" .Page.Lang) }}" class="rounded-xl border p-4" style="border-color: var(--accent);">
             <picture class="block h-40 w-full">
               <source srcset="{{ site.Data.projects.csgoStratbook.imgUrlSmall }}.webp" type="image/webp">
               <img src="{{ site.Data.projects.csgoStratbook.imgUrlSmall }}.png" alt="CSGO Stratbook {{ T "image" }}" class="h-40 w-full object-cover object-top rounded-xl">

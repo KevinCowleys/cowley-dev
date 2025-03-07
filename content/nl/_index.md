@@ -1,4 +1,4 @@
 +++
-job_title = 'Senior Ontwikkelaar'
+job_title = 'Senior Developer'
 location = '📍 Kaapstad, Zuid-Afrika'
 +++

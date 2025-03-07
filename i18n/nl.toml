@@ -17,22 +17,22 @@ hour_ahead = "Je loopt replace_me uur voor"
 hours_ahead = "Je loopt replace_me uur voor"
 
 current_technologies = 'Huidige Technologieën'
-current_technologies_desc = "Ik ben bedreven in verschillende technologieën waarmee ik effectieve oplossingen kan creëren, met een nadruk op back-end ontwikkeling. Hier zijn enkele van de belangrijkste die ik op mijn werk gebruik."
+current_technologies_desc = "Ik heb kennis over verschillende technologieën waarmee ik effectieve oplossingen kan creëren, met een nadruk op back-end development. Hier volgen enkele belangrijke technologieën die ik op werk gebruik. "
 
 experience = 'Ervaring'
-senior_developer = 'Senior Ontwikkelaar'
-intermediate_developer = 'Intermediate PHP-Ontwikkelaar'
-junior_developer = 'Junior PHP-Ontwikkelaar'
-software_engineer = 'Software-Ontwikkelaar'
+senior_developer = 'Senior Developer'
+intermediate_developer = 'Intermediate PHP Developer'
+junior_developer = 'Junior PHP Developer'
+software_engineer = 'Software Developer'
 present = 'Huidig'
 
 senior_developer_desc_1 = 'Aantoonbare kernexpertise in PHP, gebruikmakend van het Laravel- en Lumen-framework.'
-senior_developer_desc_2 = 'Als back-end ontwikkelaar een sleutelrol gespeeld bij het ontwikkelen van verschillende betaalmethoden aangeboden door Payfast die dagelijks worden gebruikt door duizenden Zuid-Afrikaanse handelaars en miljoenen kopers.'
-senior_developer_desc_3 = 'Betaalmethoden werkten: [Card Payments](https://payfast.io/features/payment-methods/credit-cheque-cards/), [Multi-Currency Payments](https://payfast.io/features/multi-currency-pricing/), [RCS](https://payfast.io/features/payment-methods/store-cards/), [Mobicred](https://payfast.io/features/payment-methods/mobicred/), [Shopify Integration](https://payfast.io/integration/plugins/shopify/), [Capitec Pay](https://payfast.io/features/payment-methods/capitec-pay/), [Network International Point-of-Sale](https://payfast.io/network/) apparaatintegratie, en diende als Tech Lead en ontwikkelaar voor [Apple Pay](https://payfast.io/features/payment-methods/apple-pay/) en [Samsung Pay](https://payfast.io/features/payment-methods/samsung-pay/) integraties.'
+senior_developer_desc_2 = 'Als back-end developer een sleutelrol gespeeld bij het ontwikkelen van verschillende betaalmethoden aangeboden door Payfast die dagelijks worden gebruikt door duizenden Zuid-Afrikaanse handelaars en miljoenen kopers.'
+senior_developer_desc_3 = 'Betaalmethoden werkten: [Card Payments](https://payfast.io/features/payment-methods/credit-cheque-cards/), [Multi-Currency Payments](https://payfast.io/features/multi-currency-pricing/), [RCS](https://payfast.io/features/payment-methods/store-cards/), [Mobicred](https://payfast.io/features/payment-methods/mobicred/), [Shopify Integration](https://payfast.io/integration/plugins/shopify/), [Capitec Pay](https://payfast.io/features/payment-methods/capitec-pay/), [Network International Point-of-Sale](https://payfast.io/network/) apparaatintegratie, en diende als Tech Lead en developer voor [Apple Pay](https://payfast.io/features/payment-methods/apple-pay/) en [Samsung Pay](https://payfast.io/features/payment-methods/samsung-pay/) integraties.'
 
 software_engineer_desc_1 = 'Gewerkt aan Game-Debate, waarvoor een 100% vernieuwing nodig was van de oude codebase met behulp van Fat-Free Framework naar het Laravel-framework.'
 software_engineer_desc_2 = 'Verschillende browserextensies gemaakt om te helpen bij het toevoegen van gegevens aan de website.'
-software_engineer_desc_3 = 'Ontwikkelde desktop- en mobiele applicaties geschreven in Qt met C++ en QML.'
+software_engineer_desc_3 = 'Ontwikkeld desktop- en mobiele applicaties geschreven in Qt met C++ en QML.'
 
 january = 'Januari'
 february = 'Februari'

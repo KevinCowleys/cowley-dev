@@ -2,7 +2,7 @@
     <h1 class="text-4xl font-semibold text-center mb-12">{{ .Params.title }}</h1>
     {{- $dataKey := .Params.dataKey }}
     {{- $projectData := index site.Data.projects $dataKey }}
-    <img src="{{ $projectData.imgUrl }}.png" alt="" class="h-88 w-full object-cover object-top rounded-xl">
+    <img src="{{ $projectData.imgUrl }}.png" alt="" class="project-cover-img h-88 w-full object-cover object-top rounded-xl">
     <div class="mt-6">
       {{- if not (eq $projectData.websiteUrl "") }}
       <a href="{{ $projectData.websiteUrl }}" target="_blank">

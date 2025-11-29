@@ -1,10 +1,70 @@
-      <div class="mt-16">
+      <div class="testimonials mt-16">
         <h2 class="text-xl font-semibold">{{ T "testomonials" }}</h2>
-        <div>
-          <blockquote class="px-4">
-            “Kevin is one of my best Senior Developers at Payfast. He is an extremely hard and fast worker, loves tech, learns quickly and upskills himself all the time to stay on top of the latest trends. Not only is he good in PHP and Laravel, he's also very skilled in Docker and Linux and how to troubleshoot the most difficult environmental issues. No company will ever regret taking Kevin into their teams!”
-          </blockquote>
-          <h4 class="mt-4 font-semibold">Leon Britz</h4>
-          <p class="text-sm muted-text">Software Development Manager</p>
-        </div>
+        <div class="slider">
+					<div class="slide active">
+						<blockquote class="px-4">
+							“Kevin is one of my best Senior Developers at Payfast. He is an extremely hard and fast worker, loves tech, learns quickly and upskills himself all the time to stay on top of the latest trends. Not only is he good in PHP and Laravel, he's also very skilled in Docker and Linux and how to troubleshoot the most difficult environmental issues. No company will ever regret taking Kevin into their teams!”
+						</blockquote>
+						<h4 class="mt-4 font-semibold">Leon Britz</h4>
+						<p class="text-sm muted-text">Software Development Manager</p>
+					</div>
+					<div class="slide">
+						<blockquote class="px-4">
+							“Kevin joined Payfast as a Junior developer and very quickly shot up the ranks. He is extremely hardworking and never shies away from any challenge. Highly motivated and smart. His PHP and Laravel skills are next to none, and he can also deliver top-quality work on the front-end side of things (Vue.js etc). I have had the pleasure of working with Kevin since he joined Payfast, not only technically but also personally. He is an asset to any organisation.”
+						</blockquote>
+						<h4 class="mt-4 font-semibold">Schalk Wepener</h4>
+						<p class="text-sm muted-text">Architect</p>
+					</div>
+					<div class="slide">
+						<blockquote class="px-4">
+							“Kevin is one of the most talented and hard working developers I have ever worked with in my career. Kevin has always found creative solutions to complex problems and more importantly he has been able to raise those around him to higher levels of their craft. Kevin is a QA’s dream, he always handed over work to the testers that was robust and that met specifications to the tee. Kevin is a kind and humble person and I highly recommend him.”
+						</blockquote>
+						<h4 class="mt-4 font-semibold">Tyrone Toplis</h4>
+						<p class="text-sm muted-text">QA Lead</p>
+					</div>
+				</div>
+				<div class="dots text-center">
+					<span class="dot active"></span>
+					<span class="dot"></span>
+					<span class="dot"></span>
+				</div>
       </div>
+			<script>
+				const slides = document.querySelectorAll('.slide');
+				const dots = document.querySelectorAll('.dot');
+				let index = 0;
+				let timer;
+
+				function showSlide(i) {
+					slides.forEach(s => s.classList.remove('active'));
+					dots.forEach(d => d.classList.remove('active'));
+					slides[i].classList.add('active');
+					dots[i].classList.add('active');
+
+					clearInterval(timer);
+					timer = setInterval(() => {
+						index = (index + 1) % slides.length;
+						showSlide(index);
+					}, 10000);
+				}
+
+				// dot click
+				dots.forEach((dot, i) => {
+					dot.addEventListener('click', () => {
+						index = i;
+						showSlide(index);
+					});
+				});
+
+				const slider = document.querySelector('.slider');
+				slider.addEventListener('mouseenter', () => clearInterval(timer));
+				slider.addEventListener('mouseleave', () => {
+					timer = setInterval(() => {
+						index = (index + 1) % slides.length;
+						showSlide(index);
+					}, 10000);
+				});
+
+				// start autoplay
+				showSlide(index);
+		</script>

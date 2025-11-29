@@ -377,3 +377,54 @@ ul {
         height: calc(50% - 1rem);
     }
 }
+
+.project-cover-img {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+}
+
+.testimonials {
+    position: relative;
+}
+
+.slider {
+    position: relative;
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.6s ease;
+}
+
+.slide.active {
+    opacity: 1;
+    position: relative;
+}
+
+
+.dots {
+  margin-top: 1rem;
+}
+
+.dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin: 0 6px;
+  background: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dot.active {
+  background: #333;
+}
+
+.dot:hover {
+  background: #666;
+  transform: scale(1.2);
+}

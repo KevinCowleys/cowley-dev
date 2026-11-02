@@ -1,6 +1,6 @@
         <a href="{{ .Get "href" }}" class="rounded-xl border p-4" style="border-color: var(--accent);">
           {{- $dataKey := .Get "datakey" }}
-          {{- $projectData := index .Data.projects $dataKey }}
+          {{- $projectData := index hugo.Data.projects $dataKey }}
           {{- if $projectData }}
           <picture class="block h-40 w-full">
             <source srcset="{{ $projectData.imgUrlSmall }}.webp" type="image/webp">

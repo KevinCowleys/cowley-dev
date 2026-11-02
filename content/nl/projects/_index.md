@@ -1,5 +1,5 @@
 +++
-slug = 'projecten'
+url = 'projecten'
 title = 'Projecten'
 type = 'page'
 layout = 'projects'

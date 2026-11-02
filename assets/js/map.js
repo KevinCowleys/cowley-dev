@@ -130,16 +130,31 @@ function localizeMap(lang) {
 }
 
 // Tooltip
-let cleanDate = new Date(new Date().toLocaleString('en-US', { timeZone: 'Africa/Johannesburg' }));
-let hourDiff = Math.round((cleanDate.getTime() - new Date().getTime()) / 36e5);
-let hourDiffString = '';
-if (hourDiff > 0) {
-    hourDiffString = (hourDiff === 1 ? hourAhead : hoursAhead);
-} else {
-    hourDiffString = (hourDiff === 1 ? hourBehind : hoursBehind);
-}
-hourDiffString = hourDiffString.replace('replace_me', `${hourDiff}:00`);
-document.getElementById('timeZone').setAttribute('data-tooltip', hourDiffString);
+const getOffset = tz => {
+    const parts = new Intl.DateTimeFormat('en-US', {
+        timeZone: tz,
+        timeZoneName: 'shortOffset'
+    }).formatToParts(new Date());
+
+    return parseInt(parts.find(p => p.type === 'timeZoneName')
+        .value.replace('GMT', '') || '0');
+};
+
+const localOffset = getOffset(
+    Intl.DateTimeFormat().resolvedOptions().timeZone
+);
+
+const copenhagenOffset = getOffset('Europe/Copenhagen');
+
+const hourDiff = localOffset - copenhagenOffset;
+
+const hourDiffString = hourDiff > 0
+    ? (hourDiff === 1 ? hourAhead : hoursAhead)
+    : (hourDiff === -1 ? hourBehind : hoursBehind);
+
+document.getElementById('timeZone')
+    ?.setAttribute('data-tooltip',
+        hourDiffString.replace('replace_me', `${Math.abs(hourDiff)}:00`));
 
 // Run first time now
 updateTime();
@@ -151,27 +166,17 @@ function updateTime() {
     const now = new Date();
 
     if (timeDisplay) {
-        const date = new Date();
-
-        // Convert UTC time to South African Standard Time
-        const offsetZA = 2;
-        date.setHours(now.getUTCHours() + offsetZA);
-
         const options = {
             hour: '2-digit',
             minute: '2-digit',
             second: '2-digit',
             hour12: true,
-            timeZone: 'Africa/Johannesburg',
+            timeZone: 'Europe/Copenhagen',
         };
 
-        let timeSAST = new Intl.DateTimeFormat('en-US', options);
-        let formattedTime = timeSAST.format(date);
+        const formattedTime = new Intl.DateTimeFormat('en-US', options).format(now);
 
-        // Adding timezone tag in
-        formattedTime += ' SAST';
-
-        timeDisplay.textContent = formattedTime;
+        timeDisplay.textContent = `${formattedTime} CET`;
         timeDisplay.setAttribute('datetime', now.toISOString());
     }
 }

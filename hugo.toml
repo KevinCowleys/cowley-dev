@@ -1,5 +1,5 @@
 baseURL = 'https://www.cowley.dev/'
-languageCode = 'en-us'
+locale = 'en-us'
 title = 'Kevin Cowley - PHP, Laravel, Lumen'
 defaultContentLanguage = 'en'
 contentDir = 'content/'
@@ -28,33 +28,33 @@ enableRobotsTXT = true
     [languages.en]
         contentDir = 'content/en'
         disabled = false
-        languageCode = 'en-US'
-        languageDirection = 'ltr'
-        languageName = 'English'
+        locale = 'en-US'
+        direction = 'ltr'
+        label = 'English'
         title = 'Kevin Cowley - PHP, Laravel, Lumen'
         weight = 1
         [languages.en.params]
-            languageName = 'English'
-            languageNameShort = 'en'
+            label = 'English'
+            labelShort = 'en'
       [languages.de]
         contentDir = 'content/de'
         disabled = false
-        languageCode = 'de-DE'
-        languageDirection = 'ltr'
-        languageName = 'Deutsch'
+        locale = 'de-DE'
+        direction = 'ltr'
+        label = 'Deutsch'
         title = 'Kevin Cowley - PHP, Laravel, Lumen'
         weight = 2
         [languages.de.params]
-            languageName = 'Deutsch'
-            languageNameShort = 'de'
+            label = 'Deutsch'
+            labelShort = 'de'
       [languages.nl]
         contentDir = 'content/nl'
         disabled = false
-        languageCode = 'nl-NL'
-        languageDirection = 'ltr'
-        languageName = 'Nederlands'
+        locale = 'nl-NL'
+        direction = 'ltr'
+        label = 'Nederlands'
         title = 'Kevin Cowley - PHP, Laravel, Lumen'
         weight = 3
         [languages.nl.params]
-            languageName = 'Nederlands'
-            languageNameShort = 'nl'
+            label = 'Nederlands'
+            labelShort = 'nl'

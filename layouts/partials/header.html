@@ -7,18 +7,14 @@
   {{- end }}
 {{- end }}
 
-{{- $siteLanguages := site.Languages }}
-{{- $pageLang := .Page.Lang }}
-{{- range $index, $value := .Page.AllTranslations }}
-    {{- $translation := . }}
-    {{- range sort $siteLanguages "Weight" "asc" }}
-        {{- if eq $translation.Lang .Lang }}
-            {{- $lastLang := index (last 1 $siteLanguages) 0 }}
-            {{- if eq $pageLang .Lang}}
-      <a class="font-semibold {{ if (eq $index 0) }}ml-auto{{ else if (in .Params.languageNameShort $lastLang) }}{{ else }}mx-2{{ end }}" href="{{ $translation.Permalink | relURL }}" hreflang="{{ .Lang }}" title="{{ .LanguageName }}" lang="{{ .Lang }}">{{ .Params.languageNameShort }}</a>
+{{- $siteLanguages := .Rotate "language" }}
+{{- $lastLang := index (last 1 $siteLanguages) 0 }}
+{{- with $siteLanguages }}
+    {{- range . }}
+        {{- if eq .Language $.Language }}
+      <a class="font-semibold {{ if eq .Site.Language.IsDefault true }}ml-auto{{ else if (in .Site.Language.Name $lastLang.Language) }}{{ else }}mx-2{{ end }}" href="{{ .Permalink | relURL }}" hreflang="{{ .Site.Language.Name }}" title="{{ .Site.Language.Label }}" lang="{{ .Site.Language.Name }}">{{ .Site.Language.Name }}</a>
             {{- else }}
-      <a class="{{ if (eq $index 0) }}ml-auto{{ else if (in .Params.languageNameShort $lastLang) }}{{ else }}mx-2{{ end }}" href="{{ $translation.Permalink | relURL }}" hreflang="{{ .Lang }}" title="{{ .LanguageName }}" lang="{{ .Lang }}">{{ .Params.languageNameShort }}</a>
-            {{- end }}
+      <a class="{{ if eq .Site.Language.IsDefault true }}ml-auto{{ else if (in .Site.Language.Name $lastLang.Language) }}{{ else }}mx-2{{ end }}" href="{{ .Permalink | relURL }}" hreflang="{{ .Site.Language.Name }}" title="{{ .Site.Language.Label  }}" lang="{{ .Site.Language.Name }}">{{ .Site.Language.Name }}</a>
         {{- end }}
-    {{- end -}}
+    {{- end }}
 {{- end -}}

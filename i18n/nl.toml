@@ -20,11 +20,14 @@ current_technologies = 'Huidige Technologieën'
 current_technologies_desc = "Ik heb kennis over verschillende technologieën waarmee ik effectieve oplossingen kan creëren, met een nadruk op back-end development. Hier volgen enkele belangrijke technologieën die ik op werk gebruik. "
 
 experience = 'Ervaring'
+senior_full_stack_engineer = 'Senior Fullstack Engineer'
 senior_developer = 'Senior Developer'
 intermediate_developer = 'Intermediate PHP Developer'
 junior_developer = 'Junior PHP Developer'
 software_engineer = 'Software Developer'
 present = 'Huidig'
+
+worksome_desc_1 = 'Het ontwikkelen en onderhouden van betaaloplossingen bij Worksome, met een focus op backend-services en full-stack functionaliteiten waarbij gebruik wordt gemaakt van PHP, Laravel, Vue.js en GraphQL. Bijdragen aan betrouwbare betaal- en salarisverwerkingssystemen.'
 
 senior_developer_desc_1 = 'Aantoonbare kernexpertise in PHP, gebruikmakend van het Laravel- en Lumen-framework.'
 senior_developer_desc_2 = 'Als back-end developer een sleutelrol gespeeld bij het ontwikkelen van verschillende betaalmethoden aangeboden door Payfast die dagelijks worden gebruikt door duizenden Zuid-Afrikaanse handelaars en miljoenen kopers.'

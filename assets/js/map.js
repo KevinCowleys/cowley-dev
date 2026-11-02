@@ -1,5 +1,7 @@
-const longitude = 18.586872;
-const latitude = -33.894693;
+import * as maplibregl from 'https://unpkg.com/maplibre-gl@^6.16.0/dist/maplibre-gl.mjs';
+
+const latitude = 55.691489;
+const longitude = 12.588147;
 const dotSize = 200;
 
 var map = new maplibregl.Map({
@@ -9,7 +11,7 @@ var map = new maplibregl.Map({
     zoom: 3 // starting zoom
 });
 
-map.zoomTo(13, { duration: 5000 });
+map.zoomTo(12, { duration: 5000 });
 
 // Everything below is to create the location dot
 const pulsingDot = {

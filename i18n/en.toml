@@ -20,11 +20,14 @@ current_technologies = 'Current Technologies'
 current_technologies_desc = "I'm skilled in various technologies that allow me to create effective solutions, with a main focus on back-end development. Here are some of the main ones I use at my job."
 
 experience = 'Experience'
+senior_full_stack_engineer = 'Senior Full Stack Engineer'
 senior_developer = 'Senior Developer'
 intermediate_developer = 'Intermediate PHP Developer'
 junior_developer = 'Junior PHP Developer'
 software_engineer = 'Software Engineer'
 present = 'Present'
+
+worksome_desc_1 = 'Developing and maintaining payment solutions at Worksome, focusing on backend services and full-stack features using PHP, Laravel, Vue.js and GraphQL. Contributing to reliable payment and payroll systems.'
 
 senior_developer_desc_1 = 'Demonstrated core expertise in PHP, leveraging the Laravel and Lumen framework.'
 senior_developer_desc_2 = 'As a back-end developer, played a key role in developing various payment methods offered by Payfast that are used daily by thousands of South African merchants and millions of buyers.'

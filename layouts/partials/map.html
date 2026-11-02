@@ -8,8 +8,9 @@
       {{- with resources.Get "css/map.css" | minify }}
       <style>{{ .Content | safeCSS }}</style>
       {{- end }}
-      <link href='https://unpkg.com/maplibre-gl@latest/dist/maplibre-gl.css' rel='stylesheet' />
-      <script src='https://unpkg.com/maplibre-gl@latest/dist/maplibre-gl.js'></script>
+      <link rel="preload" href="https://unpkg.com/maplibre-gl@^6.16.0/dist/maplibre-gl.css" as="style" />
+      <link href='https://unpkg.com/maplibre-gl@^6.16.0/dist/maplibre-gl.css' rel='stylesheet' />
+      <link rel="modulepreload" href="https://unpkg.com/maplibre-gl@^6.16.0/dist/maplibre-gl.mjs" />
       <div class="map-container">
         <div class="map-container">
           <div id='map'></div>
@@ -21,5 +22,5 @@
         </div>
       </div>
       {{- with resources.Get "js/map.js" | minify }}
-      <script>{{ .Content | safeJS }}</script>
+      <script type="module">{{ .Content | safeJS }}</script>
       {{- end }}

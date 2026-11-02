@@ -20,11 +20,14 @@ current_technologies = 'Aktuelle Technologien'
 current_technologies_desc = "Ich beherrsche verschiedene Technologien, die es mir ermöglichen, effektive Lösungen zu erstellen, wobei der Schwerpunkt auf der Backend-Entwicklung liegt. Hier sind einige der Wichtigsten, die ich bei meiner Arbeit verwende."
 
 experience = 'Erfahrung'
+senior_full_stack_engineer = 'Senior Full-Stack-Entwickler'
 senior_developer = 'Senior PHP-Entwickler'
 intermediate_developer = 'Intermediate PHP-Entwickler'
 junior_developer = 'Junior PHP-Entwickler'
 software_engineer = 'Softwareentwickler'
 present = 'Gegenwärtig'
+
+worksome_desc_1 = 'Entwicklung und Pflege von Zahlungslösungen bei Worksome, mit Fokus auf Backend-Dienste sowie Full-Stack-Funktionalitäten unter Einsatz von PHP, Laravel, Vue.js und GraphQL. Mitwirkung an zuverlässigen Zahlungs- und Gehaltsabrechnungssystemen.'
 
 senior_developer_desc_1 = 'Nachgewiesene Kernkompetenz in PHP unter Nutzung des Laravel- und Lumen-Frameworks.'
 senior_developer_desc_2 = 'Als Back-End-Entwickler habe ich eine Schlüsselrolle bei der Entwicklung verschiedener von Payfast angebotener Zahlungsmethoden, die täglich von Tausenden südafrikanischen Händlern und Millionen von Käufern genutzt werden, gespielt.'

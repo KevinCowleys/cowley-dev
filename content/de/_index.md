@@ -1,4 +1,5 @@
 +++
-job_title = 'Senior Entwickler'
-location = '📍 Kapstadt, Südafrika'
+job_title = 'Senior Full-Stack-Entwickler'
+location = '📍 Kopenhagen, Dänemark'
+original_location = '🇿🇦 Kapstadt, Südafrika'
 +++
